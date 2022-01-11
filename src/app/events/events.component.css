@@ -1,0 +1,231 @@
+.event-page{
+  background-color: black;
+  width: 100vw;
+  height: max-content;
+}
+
+/* ----------MAIN----------- */
+.main{
+    color: white;
+    /* z-index: 100000; */
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    font-size: 50px;
+    font-weight: bold;
+    height: max-content;
+    padding: 10px;
+    border-left: 5px solid yellow;
+    font-variant: small-caps;
+}
+.main span{
+    display: block;
+}
+
+/* ---------EVENTS----------- */
+.events{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    text-align: center;
+    z-index: 10000000;
+    color: white;
+}
+
+/* -------------CARDS--------------- */
+.cards{
+    display: flex;
+    width: 80vw;
+    position: relative;
+    left: 16vw;
+    height: max-content;
+    margin-bottom: 200px;
+    background-color: black;
+}
+
+/* -------------------------CARD ANIMATION--------------------- */
+section{
+  display: block;
+  padding-bottom: 100px;
+  background-color: black;
+}
+.column{
+  width: 25vw;
+  height: fit-content;
+  padding: 10px;
+  margin-right: 35px;
+  /* padding: 10px; */
+  margin-top: -100px;
+  opacity: 1;
+}
+.front img{
+  width: 25vw;
+  background-size: cover;
+  height: 450px;
+  opacity: 1;
+}
+.card .content{
+  width: 25vw;
+  border: 3px solid white;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.front h2{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+.card{
+  animation-name:glow;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+@keyframes glow{
+  from{box-shadow:0px 0px 5px white,0px 0px 5px aqua;}
+  to{box-shadow:0px 0px 20px aqua,0px 0px 20px #614ad3;}
+}
+.card .profile{
+   border-radius:10px;
+   transition: 0.2s;
+   opacity: 0.7;
+}
+.card:hover .profile{
+  transform:scale(1.4);
+}
+
+.card .content{
+  width:100%;
+  height:100%;
+  position:relative;
+  overflow:hidden;
+}
+.card .content .back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-color: #f1f1f1e6;
+  transition:1s; 
+  z-index:1;
+  padding:10px;
+}
+
+.from-bottom{
+  top:100%;
+  left:0;
+}
+.card:hover .content .from-bottom {
+   top:0%;
+}
+.back{
+  display: block;
+  align-content: center;
+}
+.back li{
+  list-style: none;
+}
+.back a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+
+
+
+
+/* ------------------RESPONSIVESNESS------------------ */
+
+@media screen and (max-width: 746px) {
+  body{
+    width: 100vw;
+  } 
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  /* ----------MAIN----------- */
+  .main{
+    position: absolute;
+    top: 15vh;
+    left: 20vw;
+    font-size: 30px;
+
+  }
+
+  /* ---------EVENTS----------- */
+  .events {
+    left: 40vw;
+    z-index: 0;
+  }
+
+
+  /* -------------CARDS--------------- */
+  .cards{
+    display: block;
+    width: 100vw;
+    left: 0;
+    justify-content: center;
+  }
+
+  /* -------------------------CARD ANIMATION--------------------- */
+  section{
+  display: block;
+  justify-content: center;
+  margin-top: -100px;
+  background-color: black;
+  }
+  .column{
+  width: 80vw;
+  padding: 0;
+  margin-right: 10vw;
+  padding-bottom: 100px;
+  }
+  .front img{
+  width: 90vw;
+  height: 60vh;
+  }
+  .cards{
+    margin-bottom: 0;
+  }
+  .card{
+    width: 90vw;
+    left: 5vw;
+  }
+  .card .content{
+  width: 90vw;
+  align-content: center;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.particles-js-canvas-el {
+    position: fixed;
+    top: 0;
+    z-index: 1000000;
+    height: max-content;
+} */

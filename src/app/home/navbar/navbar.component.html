@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://www.iconfinder.com/social-media-icons">
+
+</head>
+<body>
+    <mat-sidenav-container class="sidenav-container">
+      <mat-sidenav #drawer class="sidenav" fixedInViewport
+          [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+          [mode]="(isHandset$ | async) ? 'over' : 'side'"
+          [opened]="(isHandset$ | async) === false">
+        <mat-toolbar><img src="assets/citro logo.jpg" alt="img"></mat-toolbar>
+        <mat-nav-list class="menu">
+          <a mat-list-item routerLink="" ><mat-icon class="material-icons-outlined">home</mat-icon><span>Home</span></a>
+          <a mat-list-item routerLink="events" ><mat-icon class="material-icons-outlined">event</mat-icon><span>Event</span></a>
+          <a mat-list-item routerLink="timeline" ><mat-icon class="material-icons-outlined">timeline</mat-icon><span>Timeline</span></a>
+          <a mat-list-item routerLink="sponser" ><mat-icon class="material-icons-outlined">groups</mat-icon><span>Sponsers</span></a>
+          <a mat-list-item routerLink="about-us" ><mat-icon class="material-icons-outlined">info</mat-icon><span>About us</span></a>
+        </mat-nav-list>
+        <div class="social-icons">
+          <a href=""><mat-icon><i class="fab fa-twitter"></i></mat-icon></a>
+          <a href=""><mat-icon><i class="fab fa-instagram"></i></mat-icon></a>
+          <a href=""><mat-icon><i class="fab fa-youtube"></i></mat-icon></a>
+        </div>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <mat-toolbar class="header" color="primary">
+          <button
+            type="button"
+            aria-label="Toggle sidenav"
+            mat-icon-button
+            (click)="drawer.toggle()"
+            *ngIf="isHandset$ | async">
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          </button>
+        </mat-toolbar>
+        <!-- Add content here -->
+        <!-- <span class="close-btn"><mat-icon class="material-icons-outlined">close</mat-icon></span> -->
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+
+  </body>
+</html> 

@@ -1,0 +1,320 @@
+body{
+    background-color: black;
+}
+/* -------------------FOOTER---------------------- */
+.contact{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    font-variant: small-caps
+    
+}
+.content{
+    /* background-color: red; */
+    /* background-color: blueviolet; */
+    position: relative;
+}
+.content h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-variant: small-caps;
+    /* background-color: red; */
+    /* display: block; */
+}
+.content section{
+    display: flex;
+    justify-content:center;
+}
+.map{
+    z-index: 100;
+    /* background-color: yellow; */
+    /* padding: 20px; */
+    margin-left: 150px;
+}
+/* ---------Details--------- */
+.details{
+    color: white;
+    font-size: 18px;
+    /* background-color: violet; */
+    /* padding: 50px; */
+    display: inline-flex;
+}
+.details h2{
+    font-variant: small-caps;
+}
+.details span{
+    vertical-align :top;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+.address div{
+    margin-top : 30px;
+}
+.address, .mail{
+    /* margin-top: 50px; */
+    padding: 50px;
+}
+
+.material-icons-outlined{
+    font-size: 30px;
+    font-size: bold;
+    align-items: baseline;
+}
+.mail{
+    /* background-color: turquoise; */
+    text-align: center;
+}
+/* ::ng-deep .mat-form-field-label {
+    color: white !important;
+} */
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label{
+    color: aqua !important;
+}
+::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: aqua !important;
+    color: aqua !important;
+}
+
+
+.example-form {
+    min-width: 100px;
+    max-width: 300px;
+    width: 100%;
+}
+  
+.example-full-width {
+    width: 100%;
+    /* border-bottom: 2px solid aqua; */
+}
+
+.submit-btn{
+    width: 150px;
+    margin-left: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px;
+    border: 2px solid hsl(190deg 96% 53%);
+    background-color: black;
+    /* background-color:hsl(190deg 96% 53%); */
+    /* border: none; */
+    color: white;
+    border-radius: 5px;
+}
+.submit-btn:hover{
+    background-color: hsl(190deg 96% 53%);
+    color: black;
+}
+/* ------------COPYRIGHT--------------- */
+.copyright{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+.copyright-mobile{
+    display: none;
+}
+
+
+
+/* -------------------------------------------------------RESPONSIVENESS----------------------------------- */
+
+@media (max-width : 746px) {
+   
+     /* -------------------FOOTER---------------------- */
+     .contact{
+         font-size: 20px;  
+         position:absolute;
+         top: 50%;  
+     }
+     .content{
+         background-color: black;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 100vw;
+         text-align: center;
+     }
+     .content section{
+         display: block;
+     }
+     .content h1{
+         font-size: 30px;
+         text-align: center;
+     }
+     .map iframe{
+         display: block;
+         width: 80vw;
+         height: 50vh;
+     }
+     .map{
+         margin-left: 10vw;
+     }
+     /* ---------Details--------- */
+     .details{
+         position: relative;
+         font-size: 16px;
+         display: block;
+     }
+     .details span{
+         vertical-align :top;
+         padding: 10px;
+         margin-bottom: 2px;
+     }
+     .address div{
+         margin-top : 20px;
+         text-align: left;
+     }
+     .address, .mail{
+         padding: 20px;
+         width: 80vw;
+         margin-left: 5vw;
+     }
+     .mail{
+         text-align: center;
+     }
+     
+     .submit-btn{
+         width: 100px;
+         font-size: 17px;
+         padding: 5px;
+         margin-bottom: 20px;
+     }
+     /* ------------COPYRIGHT--------------- */
+     .copyright{
+         display: none;
+     }
+     .copyright-mobile{
+         width: 85vw;
+         display: block;
+         justify-content: center;
+         text-align: center;
+         color: white;
+         z-index: 100;
+         font-size: 15px;
+         padding: 20px;
+     }
+ }
+
+@media (max-width : 992px) and (min-width : 746px) {
+   
+    /* -------------------FOOTER---------------------- */
+    .contact{
+        font-size: 16px;  
+        position:absolute;
+        top: 50%;  
+    }
+    .content{
+        /* background-color: brown; */
+        position: absolute;
+        top: 100vh;
+        left: 0%;
+        width: 100vw;
+        text-align: center;
+        background-color: black;
+    }
+    /* .content section{
+        display: inline-block;
+    } */
+    .content h1{
+        font-size: 30px;
+        text-align: center;
+        /* margin-left: 30vw; */
+    }
+    .map iframe{
+        display: block;
+        width: 30vw;
+        height: 30vh;
+        margin-left: 10vw;
+    }
+    .map{
+        margin-left: 10vw;
+        margin-top: 10vh;
+    }
+    /* ---------Details--------- */
+    .details{
+        position: relative;
+        font-size: 16px;
+        /* margin-left: 10vw; */
+    }
+    .address div{
+        margin-top : 20px;
+        text-align: left;
+    }
+    .address, .mail{
+        padding: 20px;
+    }
+    
+    .example-form {
+        max-width: 200px;
+    }
+    /* ------------COPYRIGHT--------------- */
+    .copyright{
+        display: none;
+    }
+    .copyright-mobile{
+        width: 100vw;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        z-index: 100;
+        font-size: 15px;
+        padding: 20px;
+    }    
+}
+/* 
+@media (min-width : 1208px){
+
+} */
+
+/* @media (max-width : 1280px){
+    .content{
+        background-color: black;
+    }
+    .map iframe{
+        display: block;
+        width: 30vw;
+        height: 30vh;
+        /* margin-left: 10vw; 
+    }
+    .map{
+        margin-top: 10vh;
+    }
+    /* ---------Details--------- 
+    .details{
+        position: relative;
+        font-size: 16px;
+        /* margin-left: 10vw; 
+        padding: 50px;
+    }
+    .address div{
+        margin-top : 20px;
+        text-align: left;
+    }
+    .address, .mail{
+        padding: 20px;
+    }
+    
+    .example-form {
+        max-width: 250px;
+    }
+    /* ------------COPYRIGHT--------------- 
+    .copyright{
+        display: none;
+    }
+    .copyright-mobile{
+        width: 100vw;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        z-index: 100;
+        font-size: 15px;
+        padding: 20px;
+    }    
+} */
