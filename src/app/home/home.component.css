@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 body{
     margin: 0;
     padding: 0;
@@ -66,8 +67,6 @@ body{
     /* border-left: 5px solid yellow; */
 }
 
-
-
 /* -------------------------------------------------------RESPONSIVENESS----------------------------------- */
 
 @media (max-width : 746px) {
@@ -77,10 +76,22 @@ body{
     }
     .citronics{
         position: absolute;
-        left: 20%;
-        top: 45%;
+        left: 10vw;
+        top: 45vh;
         opacity: 1;
         font-size: 35px;
+    }
+    /* .citronics a{
+        width: 50px;
+    } */
+    .expand-more{
+        background-image : radial-gradient(aqua, blue);
+        color: white;
+        width: 50px;
+        height: 50px;
+        font-weight: 550;
+        border: none;
+        border-radius: 50%;
     } 
     .bg-img{
         width: 100%;

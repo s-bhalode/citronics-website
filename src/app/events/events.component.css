@@ -178,20 +178,20 @@ section{
 
   /* -------------------------CARD ANIMATION--------------------- */
   section{
-  display: block;
-  justify-content: center;
-  margin-top: -100px;
-  background-color: black;
+    display: block;
+    justify-content: center;
+    margin-top: -100px;
+    background-color: black;
   }
   .column{
-  width: 80vw;
-  padding: 0;
-  margin-right: 10vw;
-  padding-bottom: 100px;
+    width: 80vw;
+    padding: 0;
+    margin-right: 10vw;
+    /* padding-bottom: 100px; */
   }
   .front img{
-  width: 90vw;
-  height: 60vh;
+    width: 90vw;
+    height: 60vh;
   }
   .cards{
     margin-bottom: 0;

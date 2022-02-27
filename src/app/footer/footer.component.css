@@ -21,6 +21,7 @@ body{
     text-align: center;
     padding: 10px;
     font-variant: small-caps;
+    margin-bottom: 50px;
     /* background-color: red; */
     /* display: block; */
 }
@@ -37,12 +38,13 @@ body{
 /* ---------Details--------- */
 .details{
     color: white;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 16px;
     /* background-color: violet; */
     /* padding: 50px; */
     display: inline-flex;
 }
-.details h2{
+.details h3{
     font-variant: small-caps;
 }
 .details span{
@@ -108,23 +110,22 @@ body{
     color: black;
 }
 /* ------------COPYRIGHT--------------- */
-.copyright{
+.copyright-mobile{
     color: white;
     display: block;
     text-align: center;
     padding: 20px;
     font-size: 18px;
 }
-.copyright-mobile{
+/* .copyright-mobile{
     display: none;
-}
+} */
 
 
 
 /* -------------------------------------------------------RESPONSIVENESS----------------------------------- */
 
 @media (max-width : 746px) {
-   
      /* -------------------FOOTER---------------------- */
      .contact{
          font-size: 20px;  
@@ -133,8 +134,8 @@ body{
      }
      .content{
          background-color: black;
-         position: absolute;
-         top: 100%;
+         position: sticky;
+         bottom: 0%;
          left: 0;
          width: 100vw;
          text-align: center;
@@ -145,20 +146,28 @@ body{
      .content h1{
          font-size: 30px;
          text-align: center;
+         margin-bottom: 10px;
+     }
+     h3{
+         font-size: 15px;
      }
      .map iframe{
          display: block;
          width: 80vw;
          height: 50vh;
+         display: none;
      }
      .map{
          margin-left: 10vw;
      }
      /* ---------Details--------- */
+     .material-icons-outlined{
+        font-size: 15px;
+    }
      .details{
          position: relative;
-         font-size: 16px;
-         display: block;
+         font-size: 10px;
+         display: flex;
      }
      .details span{
          vertical-align :top;
@@ -170,19 +179,23 @@ body{
          text-align: left;
      }
      .address, .mail{
-         padding: 20px;
-         width: 80vw;
+         padding: 0px;
+         width: 50vw;
          margin-left: 5vw;
      }
      .mail{
          text-align: center;
      }
-     
+     .example-form {
+        min-width: 100px;
+        max-width: 200px;
+        width: 90%;
+    }    
      .submit-btn{
-         width: 100px;
-         font-size: 17px;
-         padding: 5px;
-         margin-bottom: 20px;
+         width: 20vw;
+         font-size: 10px;
+         padding: 3px;
+         margin-bottom: 0px;
      }
      /* ------------COPYRIGHT--------------- */
      .copyright{
@@ -195,8 +208,9 @@ body{
          text-align: center;
          color: white;
          z-index: 100;
-         font-size: 15px;
+         font-size: 10px;
          padding: 20px;
+         margin-left: 10vw;
      }
  }
 
